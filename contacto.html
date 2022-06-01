@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="/HTML/ContactoCSS/contacto.css">
+    </head>
+    <body>
+            <div class="overlay">
+            <form onsubmit="event.preventDefault(); validateform()">
+                <h1>Contactanos</h1>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+                <small class="error"></small> 
+                <label for="Mail">Mail:</label>
+                <input type="text" id="mail" placeholder="Tu mail">
+                <small class="error"></small> 
+                <label for="Mensaje">Mensaje:</label>
+                <textarea id="mensaje" placeholder="Tu mensaje" rows="6"> </textarea>
+                <small class="error"></small> 
+
+                <div class="center">
+                    <input type="submit" value="Enviar mensaje">
+                    <p id="Sucess"> </p>
+
+                </div>
+            </form>
+            </div>
+            <script src="/HTML/javaform/script.js"></script>
+    </body>
+</html>
